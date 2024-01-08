@@ -1,0 +1,23 @@
+<!-- qn 2. Adding 10 each time whenever you click the button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <p id="result">0</p>
+        <button id="sumbtn" onclick="mysum()">Add 10</button>
+    </center>
+    <script>
+        let result = document.getElementById("result");
+        let count=0;
+        function mysum() { 
+            count=count+10;
+            result.innerHTML=count;
+        }
+    </script>
+</body>
+</html>

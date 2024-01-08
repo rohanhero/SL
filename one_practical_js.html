@@ -1,0 +1,25 @@
+<!-- q3 .A js program to test whether the first character of a string is uppercase or not. -->
+<!DOCTYPE html>
+<head>
+    <title>Class one</title>
+</head>
+<body>
+    <br><br>
+    <form action="">
+        String: <input type="text" id="strr">
+        <input class="btn" type="submit" value="Check string" onclick="stringCheck()">
+    </form>
+    <script>
+        var jPattern = /^[A-Z]/g;
+        function stringCheck(){
+            let strr = document.getElementById("strr").value;
+            if(jPattern.test(strr)){
+                alert("String verified");
+            }
+            else{
+                alert("String not verified");
+            }
+        }
+    </script>
+</body>
+</html>
